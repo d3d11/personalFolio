@@ -324,13 +324,13 @@ footer a:hover {
 
 @media (max-width: 767px) {
     .title h1 {
-        font-size: 32px;
-        line-height: 35px;
+        font-size: 23px;
+        line-height: 24px;
     }
 
     .title h1 span {
-        font-size: 32px;
-        line-height: 29px;
+        font-size: 23px;
+        line-height: 24px;
     }
 }
 
