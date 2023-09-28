@@ -334,6 +334,42 @@ footer a:hover {
     }
 }
 
+
+@media (max-width: 1200px) {
+    #about p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .skills-section
+    {
+        display: inline;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+        padding: 25px;
+        color: #ccd6f6;
+    }
+    
+    .timeline-content ul li {
+        font-size: 9px;
+        padding: 5px;
+    }
+}
+
+ @media (max-width: 768px) {
+    .container-experience {
+        flex-direction: column;
+    }
+
+    .timeline-block {
+        margin-bottom: 30px; /* Add spacing between timeline blocks */
+    }
+}
+
+
 .navbar-toggler-icon {
     background-color: #64ffda;
 }
@@ -398,6 +434,7 @@ footer a:hover {
     align-items: left;
     height: 0vh;
     width: 100%;
+    margin: 200px;
 }
 
 @media (max-width: 992px) {
@@ -711,12 +748,14 @@ footer a:hover {
     text-align: left;
     max-width: 50%;
     margin-top: 15px;
+    margin-right: 50px;
     color: #8892b0;
     font-size: 18px;
     line-height: 26px;
 }
 
 .skills-content {
+    display: inline;
     text-align: left;
     max-width: 87%;
     margin-top: 15px;
@@ -727,8 +766,8 @@ footer a:hover {
 
 .card-deck {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
 }
 
 .card {
@@ -805,7 +844,7 @@ footer a:hover {
 }
 
 #experience .company span {
-    font-size: 22px;
+    font-size: 19px;
     margin-bottom: -30px;
     color: #64ffda;
     display: inline-block;
@@ -820,6 +859,7 @@ footer a:hover {
 .timeline-content ul li {
     font-size: 15px;
     padding: 5px;
+    max-height: 10%;
     color: #8892b0;
 }
 
@@ -837,31 +877,49 @@ footer a:hover {
 }
 
 .timeline-block {
-    width: -webkit-calc(50% + 8px);
-    width: -moz-calc(50% + 8px);
-    width: calc(50% + 8px);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    justify-content: space-between;
+    width: 100%; /* Change to full width for mobile */
+    display: block; /* Change to block-level element for mobile */
     clear: both;
 }
 
-.timeline-block-right {
-    float: right;
+.timeline-block-right,
+.timeline-block-left {
+    float: none; /* Remove float for mobile */
 }
 
-.timeline-block-left {
-    float: left;
+@media (min-width: 769px) {
+
+    #experience .company
+    {
+        margin: 0;
+    }
+
+    .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .timeline-block-right {
+        float: right;
+    }
+
+    .timeline-block-left {
+        float: left;
+    }
 }
 
 .timeline-content {
-    width: 95%;
-    padding: 0 15px;
+    max-width: 100%;
+    padding: 25px;
     color: #ccd6f6;
 }
 
@@ -899,7 +957,7 @@ footer a:hover {
 }
 
 .contact-title {
-    font-size: 60px;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 10px;
     color: #ccd6f6;
@@ -915,9 +973,9 @@ footer a:hover {
 
 #contact p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 10px;
-    line-height: 26px;
+    line-height: 25px;
     width: 50%;
 }
 
@@ -928,6 +986,7 @@ footer a:hover {
 #contact p {
     color: #8892b0;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .contact-button {
