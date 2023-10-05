@@ -1015,6 +1015,12 @@ footer a:hover {
     box-sizing: border-box;
 }
 
+.skills-h1
+{
+    font-size: 32px;
+    text-align: center;
+}
+
 button {
     position: relative;
     display: inline-block;
