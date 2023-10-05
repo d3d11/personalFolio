@@ -856,6 +856,16 @@ footer a:hover {
     color: #ccd6f6;
 }
 
+@media (max-width: 768px) {
+    #experience .company {
+        font-size: 16px;
+    }
+
+    #experience .company span {
+        font-size: 16px;
+    }
+}
+
 .timeline-content ul li {
     font-size: 15px;
     padding: 5px;
