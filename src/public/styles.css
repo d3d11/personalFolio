@@ -839,7 +839,9 @@ footer a:hover {
 
 #experience .company {
     font-size: 22px;
-    margin-bottom: -30px;
+    margin: -32px;
+    padding-left: 32px;
+    text-align: left;
     color: #ccd6f6;
 }
 
@@ -875,7 +877,8 @@ footer a:hover {
 
 .timeline-content .experience-description {
     display: block;
-    margin-bottom: 23px;
+    text-align: left;
+    margin-bottom: 14px;
 }
 
 .container-experience {
@@ -898,12 +901,6 @@ footer a:hover {
 }
 
 @media (min-width: 769px) {
-
-    #experience .company
-    {
-        margin: 0;
-    }
-
     .timeline-block {
         width: -webkit-calc(50% + 8px);
         width: -moz-calc(50% + 8px);
